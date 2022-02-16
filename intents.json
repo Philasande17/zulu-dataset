@@ -1,0 +1,501 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [ "hi ", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day", "Greetings!", "Hello", "Nice to meet you", "How do you do?", "It is a pleasure to meet you", "What's up?", "What's up?", "What's up?" ],
+      "responses": [ "Hello", "fine you ?", "Hi there, how can I help?", "hello", "hy ", "good day", "Hello", "Greetings", "Thank you.", "I'm doing well", "Thank you. You too.", "Not much you", "Not much, how about you?", "Nothing much. you" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "ukubingelela",
+      "patterns": [ "Sawubona", " Ninjani", "Ukhona engikhuluma naye?", "wola", "sure", "Sanibona", "Unjani?", "Ninjanike" ],
+      "responses": [ "Yebo, Siyaphila", "Yebo ngikhona", "sure ngingakusizangani?", "yebo", "yebo ngakusiza ngani ?", "siyaphila" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "hamba_kahle",
+      "patterns": [ "Sala kahle", "Salani kahle ", "siyabonga", "bekumunandi ukuluma nawe, salekahle", "siyobuye ibonane" ],
+      "responses": [ "nawe ngokunjalo!", "Nawe ngokunjalo", "yebo! ubuye ubuye.", "bye", "yebo nani ", "yebo" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [ "Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time" ],
+      "responses": [ "See you!", "Have a nice day", "Bye! Come back again soon.", "bye", "Bye" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [ "Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me" ],
+      "responses": [ "Happy to help!", "Any time!", "My pleasure", "cool", "My pleasure" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "ngiyabonga",
+      "patterns": [ "Ngiyabonga", "Sesibonga wena", "wayilamula", "ngiyezwa, ngiyabonga", "ngiyabonga ngosizo lwakho" ],
+      "responses": [ "Kuyithokozo yami ukusiza", "noma inini!", "kubonga mina!", "Yebo", "yebo bye", "Yebo" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [ "hfkegsbd", "ywbfktosbw", "hwpkd", "ho is u" ],
+      "responses": [ "Sorry, can't understand you", "Please give me more info", "Not sure I understand" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "akunampendulo",
+      "patterns": [ "hjjhjrfjkfdk", "hjegwfj", "ukhwwahf", "una tuy" ],
+      "responses": [ "ngiyaxolisa , angikuzwa kahle", "ngicela ungipha ulwazi oluningana", "ngathi angiqondi kahle " ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "options",
+      "patterns": [ "How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered" ],
+      "responses": [ "Yes", "  I dont underdtand", "Can you put the question in a different way", "help about farming", "I can offer farming support", "I dont understand" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "ongakhetha_kukho",
+      "patterns": [ "ngingabakanjn usizo?", "ngingakusiza ngani ?", "ngingakunika usizo ngani?", "Ungasiza kanjani", "Yiluphi usizo olunikezwayo" ],
+      "responses": [ "Ngingakunikwa ulwazi ngikuchushise ngokwezokumima ", "ukulandelela ukukhula kwezitshalo", " amakhemisi nasezotholo semithi yezitshalo", "Ukunikeza ukwesekwa kwe-Adverse Ukunisela", "ukuthambisa komhlabathi", " amakhemisi nasezotholo semithi yezitshalo", "Angiqondi ", "ngicela ungi bekela ngenye indlela" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "amakhemikhali_abi ",
+      "patterns": [ "Ungahlola kanjani ukusabela okungalungile kwamakhemikhali ezitshalo?", "Vula amakhemikhali ezitshalo ezimbi", "Nginike uhlu lwamakhemikhali noma umkhiqizo odala isimilo esingesihle", "Bhala uhlu lwawo wonke amakhemikhali ezitshalo ezilungele izitshalo ezinokusabela okungalungile", "Which crop chemicals dont have adverse reaction?" ],
+      "responses": [ "Ukuzulazula kumodyuli wamakhemikhali wesitshalo esibi" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "adverse_chemicals ",
+      "patterns": [ "How to check Adverse crop chemicals reaction?", "Open adverse crop chemicals module", "Give me a list of  crop chemicals causing adverse behavior", "List all chemicals suitable for crop with adverse reaction", "Which chemicals dont have adverse reaction?" ],
+      "responses": [ "Navigating to Adverse chemicals reaction module" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "crop_diseases",
+      "patterns": [ "Open crop diseases module", "Task related to crop diseases", "crop diseases data entry", "I want to log crop diseases results", "crop diseases data management" ],
+      "responses": [ "Navigating to crop diseases module" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "crop_diseases_search",
+      "patterns": [ "I want to search for crop diseases result history", "crop diseases for crops", "Load crop diseases result", "Show crop diseases results for crops", "Find crop diseases results by ID" ],
+      "responses": [ "Please provide crop ID", " crop ID?" ],
+      "context": [ "search_crop_diseases_by_crop_id" ]
+    },
+    {
+      "tag": "crop_diseases_search",
+      "patterns": [ "Ngifuna ukucinga umlando wemiphumela yezifo zezitshalo", "izifo zezitshalo zezitshalo", "Ukulayisha izifo zezitshalo", "Khombisa imiphumela yezifo zezitshalo zezitshalo", "Thola imiphumela yezifo zezitshalo nge ID" ],
+      "responses": [ "Sicela unikeze ngesitshalo ID", "sitshalo ID?" ],
+      "context": [ "search_crop_diseases_by_crop_id" ]
+    },
+
+    {
+      "tag": "search_crop_diseases_by_crop_id",
+      "patterns": [],
+      "responses": [ "Kulayishwa imiphumela yezifo zezitshalo" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "pharmacy_search",
+      "patterns": [ "Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+      "responses": [ "Please provide pharmacy name" ],
+      "context": [ "search_pharmacy_by_name" ]
+    },
+    {
+      "tag": "pharmacy_search",
+      "patterns": [ "Ngitholele ikhemisi", "Thola ikhemisi", "Uhlu lwamakhemisi aseduze", "Thola ikhemisi", "Sesha ikhemisi" ],
+      "responses": [ "Sicela unikele ngegama lekhemisi" ],
+      "context": [ "search_pharmacy_by_name" ]
+    },
+    {
+      "tag": "search_pharmacy_by_name",
+      "patterns": [],
+      "responses": [ "Loading pharmacy details" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "search_pharmacy_by_name",
+      "patterns": [],
+      "responses": [ "Ilayisha imininingwane yekhemisi" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "crop_shop_search",
+      "patterns": [ "Lookup for crop shop", "Searching for crop shop to buy freash crops", "I want to search crop shop data", "crop shop lookup for farms", "Looking up crop shop details" ],
+      "responses": [ "Please provide crop shop name or location" ],
+      "context": [ "search_crop_shop_by_params" ]
+    },
+    {
+      "tag": "crop_shop_search",
+      "patterns": [ "Bheka isitolo sezitshalo", "Isesha isitolo sezitshalo ,ukuthenga izitshalo ezikhululekile", "Ngifuna ukusesha idatha yezitolo zezitshalo", "ukubheka izitolo zezitshalo kubalimi", "Ukubheka imininingwane yezitolo zezitshalo" ],
+      "responses": [ "Sicela unikeze igama lesitolo sezitshalo noma indawo" ],
+      "context": [ "search_crop_shop_by_params" ]
+    },
+    {
+      "tag": "search_crop_shop_by_params",
+      "patterns": [],
+      "responses": [ "Please provide  crop shop type" ],
+      "context": [ "search_ crop_shop_by_type" ]
+    },
+    {
+      "tag": "search_crop_shop_by_params",
+      "patterns": [],
+      "responses": [ "Sicela unikeze uhlobo lwesitolo sezitshalo" ],
+      "context": [ "search_ crop_shop_by_type" ]
+    },
+    {
+      "tag": "search_ crop_shop_by_type",
+      "patterns": [],
+      "responses": [ "Loading crop shop details" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "digital_farming",
+      "patterns": [ "What is digital farming?", "What are the benifits of digital farming?", "Which kinds of farmers will benefit most from digital farming?", "What are the basic components of digital farming?", "How can digital farming help me increase my yields?" ],
+      "responses": [ "digital farming is the use of digital technology to integrate agricultural production from the paddock to the consumer ", "Its Offering  soil sensing, irrigation control, farm management, machinery, and crop lifecycle management.", "all types of farmers can benefit frm digital farming", " precision, decision, and cultivation", "Digital farming is all about giving farmers real-time insights into their farm so they can analyze and make optimal decisions for their farms. ,  Using it can help farmers optimize irrigation systems and strategies, weather data, soil and plant data" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "ukulima_kwedijithali",
+      "patterns": [ "Kuyini ukulima ngedijithali?", "Yiziphi izinzuzo zokulima ngedijithali?", "Yiziphi izinhlobo zabalimi ezizohlomula kakhulu ekulimeni ngedijithali?", "Yiziphi izingxenye eziyisisekelo zokulima ngedijithali?", "Ukulima ngedijithali kungangisiza kanjani ukuthi ngikhulise isivuno sami?" ],
+      "responses": [ "ukulima kwedijithali ukusetshenziswa kobuchwepheshe bedijithali ukuhlanganisa ukukhiqizwa kwezolimo kusuka endaweni yokucasha kuya kumthengi ", "Ukunikeza inzwa yenhlabathi, ukulawula ukuchelela, ukuphathwa kwepulazi, imishini, nokuphathwa komjikelezo wokuphila kwezitshalo.", "zonke izinhlobo zabalimi zingazuza frm digital farming", " precision, decision, and cultivation", "Ukulima ngedijithali kumayelana nokunikeza abalimi imininingwane yesikhathi sangempela epulazini labo ukuze bakwazi ukuhlaziya futhi benze izinqumo ezifanele zamapulazi abo. ,  Ukuyisebenzisa kungasiza abalimi ukuthi bathuthukise izinhlelo namasu okunisela, idatha yesimo sezulu, idatha yenhlabathi nezitshalo" ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "Precision _farming",
+      "patterns": [ "What is Precision farming?", "What are the benifits of Precision farming?" ],
+      "responses": [ "Precision agriculture (PA) is an approach to farm management that uses information technology (IT) to ensure that crops and soil receive exactly what they need for optimum health and productivity ", "Its Reduced costs ,Increased Profitability , Enhanced Sustainability ,Better Harvestability ,Increased Land Values , Higher Resolutions Understanding of the farmers Farm ,Better In season Yield Understanding  " ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "Ukunemba _ukulima",
+      "patterns": [ "Kuyini ukulima kwe-Precision?", "Yiziphi izinzuzo zokulima i-Precision?" ],
+      "responses": [
+        "I-Precision Agriculture (PA) iyindlela yokuphatha amapulazi esebenzisa ubuchwepheshe bezolwazi (IT) ukuze kuqinisekiswe ukuthi izitshalo nomhlabathi zithola lokho kanye ezikudingayo ukuze uthole impilo enhle nokukhiqiza. ",
+        "Izindleko zayo Ezincishisiwe ,Ukwandisa Inzuzo",
+        " Ukuzinza Okuthuthukisiwe ,Ukuvunwa Okungcono ,Ukwenyuka Kwamanani Omhlaba",
+        " Ukuqonda Izinqumo Eziphakeme Zepulazi Labalimi ,Okungcono Ngesizini khiqiza ukuqonda  "
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "decision_farming",
+      "patterns": [ "What is Decision farming?", "What are the benifits of Decision farming" ],
+      "responses": [
+        "Decision is the use of quality information that is timely and within the decision loop",
+        "Is uses advanced sensors, descriptive models, and predictive algorithms to provide insight to crops, equipment, and other challenges"
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "Ukulima_kwesinqumo",
+      "patterns": [ "Kuyini ukulima ngezinqumo?", "Yiziphi izinzuzo zokulima ngezinqumo" ],
+      "responses": [
+        "Isinqumo ukusetshenziswa kolwazi lwekhwalithi olufika ngesikhathi futhi ngaphakathi kwe-loop yesinqumo",
+        "Isebenzisa izinzwa ezithuthukisiwe, amamodeli achazayo, nama-algorithms wokubikezela ukuze inikeze ukuqonda ezitshalweni, okokusebenza, nezinye izinselele."
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "hlakulela",
+      "patterns": [ "Yini ukuhlakulela ngokwe mushini ?", "Yiziphi izinzuzo zokulima" ],
+      "responses": [
+        "Ukusebenzisa isikhathi sangempela , nemishini ukuze kwenziwe izinqumo ngo kuthukulula nokuhlephula (ukulinywa) komhlabathi ",
+        "It uses observation power to  destroy weeds and promote growth by increasing soil aeration and water infiltration."
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "indoor_farming",
+      "patterns": [ "What is indoor farming ? ", " What are the benefits of indoor farming?" ],
+      "responses": [ "Indoor farming is the practice and process of growing crops and produce in vertically stacked layers  ", "It providing jobs and fresh food for family, friends, and your community; and avoiding common farming dangers like chemical exposure, weather condition hazards, and pests/insects." ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "ukulima_kwasendlini",
+      "patterns": [ " ukulima endlini ? ", " Yiziphi izinzuzo zokulima endlini?" ],
+      "responses": [
+        "Ukulima kwasendlini kuwumkhuba kanye nenqubo yokutshala izitshalo futhi kukhiqizwe ngezingqimba eziqondile ",
+        "Ihlinzeka ngemisebenzi nokudla okusha komndeni, abangani, kanye nomphakathi wakho; futhi igwema izingozi ezivamile zokulima njengokuchayeka kwamakhemikhali, izingozi zesimo sezulu, nezinambuzane/izinambuzane."
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "vertical_farming",
+      "patterns": [ "What is vertical farming?", "What are the benifits of vertical farming", "What are the problems with vertical farming?" ],
+      "responses": [
+        "Vertical farming is the practice of growing crops in vertically stacked layers ,crops are grown indoors, under artificial conditions of light and temperature.",
+        "Growing a variety of crops and produce , provides healthier and more nutritious foods , Avoid common farming dangers, like chemical exposure and weather hazards",
+        "it is quite expensive , Vertical farms can take a lot of power"
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "ukulima_okuqondile_mpo",
+      "patterns": [ "yini i vertical farming ?", "Yiziphi izinzuzo vertical farming", "Ziyini izinkinga nge vertical farming?" ],
+      "responses": [
+        "Vertical farming umkhuba wokutshala izitshalo ngezigaba ezimbondelene ziqondile, izitshalo zitshalwa endlini, ngaphansi kwezimo zokwenziwa zokukhanya nezinga lokushisa.",
+        "Ukukhulisa izitshalo nemikhiqizo ehlukahlukene , inikeza ukudla okunempilo nokunomsoco ,i Gwema izingozi ezivamile zokulima, njengokuchayeka kwamakhemikhali nobungozi besimo sezulu",
+        "kuyabiza impela  , amapulazi a Vertical angathatha amandla agesi amaningi"
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "greenhouse",
+      "patterns": [ "What is a greenhouse?", "What are the benifits of a greenhouse", "What are the problems with a greenhouse?" ],
+      "responses": [
+        "A greenhouse is a structure with walls and roof made chiefly of transparent material, such as glass, in which plants requiring regulated climatic conditions are grown ",
+        "Growing a variety of crops and produce , provides healthier and more nutritious foods , Avoid common farming dangers, like chemical exposure and weather hazards",
+        "it is quite expensive , Vertical farms can take a lot of power"
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "i_greenhouse",
+      "patterns": [ "Iyini i-greenhouse?", "Ziyini izinzuzo ze-greenhouse", "Ziyini izinkinga nge-greenhouse?" ],
+      "responses": [
+        "I-greenhouse iyisakhiwo esinezindonga nophahla olwenziwe ngokuyinhloko ngezinto ezibonakalayo, njengengilazi, lapho izitshalo ezidinga izimo zezulu ezilawulwayo zitshalwa ",
+        "Ukukhula kwezitshalo nokukhiqiza okuhlukahlukene , kunikeza ukudla okunempilo nokunomsoco , Gwema izingozi ezivamile zokulima, njengokuchayeka kwamakhemikhali kanye nezingozi zesimo sezulu",
+        "iyabiza kakhulu , amapulazi aqondile angathatha amandla amaningi"
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "organic_farming",
+      "patterns": [
+        "What is a organic farming ?",
+        "does Organic farming gives a positive image to a farm ",
+        "are Local markets for organic products are availablE",
+        "is Organic farming is more profitable than conventional farming ",
+        "what is conventional farming",
+        "are Organic certification bodies are available ?",
+        "are Use of chemical inputs is negative for health of people ?",
+        "is Organic farming  labour intensive ? ",
+        " what are pest infestation",
+        "Without using chemical pesticides can high pest infestation  happen",
+        "does Governmental support to organic farming ",
+        " are organic yields too low ? ",
+        "will Local consumers  be willing to pay higher prices for organic products ?",
+        "does the use of chemical inputs improves product appearance ?",
+        "are Organic fertilisers and pesticides are available for ever one  ",
+        "can Organic products be sold for higher prices compared to conventional products? ",
+        "do Organic farmers live more in harmony with nature",
+        "does Conversion into organic farming requires high investment costs ",
+        "does the Use of chemical fertilisers improves product taste ",
+        "does Organic farming requires high certification and inspection costs ",
+        "does Organic farming reduces chemical output to the environment ",
+        "are there subsidies for organic farming",
+        "are Organic products are healthier",
+        "are Organic fertilisers and pesticides are expensive"
+      ],
+      "responses": [
+        "Organic farming is the process of using environmentally friendly farming methods to improve soil health, to protect the environment and to ensure human",
+        "in different classes of life but yes there is ",
+        "yes , Organic farming, in general, is more profitable than conventional farming",
+        "yes  , they may cause like hemoglobin disorders, Alzheimer's disease and diabetes mellitus.",
+        "Yes , Organic farming systems are often more labor intensive because of increased time spent managing weeds and monitoring pests. Labor costs",
+        "The occurrence of one or more pest species in an area or location where their numbers and impact are currently or potentially at intolerable levels",
+        " its depends on the session but pesticide can provoke a resurgence of the target pest ",
+        "Yes , PKVY scheme promotes cluster-based organic farming with Participatory Guarantee Systems (PGS) certification",
+        "Yes , this is sometimes caused by the lost of organic farming",
+        "Yes , The organic food supply is limited as compared to demand",
+        "yes its does ",
+        "No , fertilizers only help crops thrive despite the threat of weeds and disease.",
+        "Yes",
+        "Yes",
+        "Yes , Organic farming in principle discourages the use of harsh chemicals and therefore, contributes towards the preservation of the natural environment",
+        "No , there are no regular government subsidy programs ",
+        "Yes they containing more and higher levels of nutrients than non-organic foods ",
+        "Yes"
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "farming",
+      "patterns": [
+        "What is cultivation farming?",
+        "What are the benifits of cultivation farming",
+        "What do you mean by cultivation",
+        "What is cultivation of soil",
+        "What is the use of cultivation",
+        "What is Shifting Cultivation",
+        "What is Nomadic Herding",
+        "what is Rudimentary Sedentary Tillage",
+        "What is Livestock Ranching/Pastoral Farming",
+        "What is Commercial Plantations",
+        "What is Mixed Farming",
+        "what is Specialized Horticulture",
+        "What is Subsistence Farming",
+        "What is Mediterranean Agriculture?",
+        "What is Dairy Farming?",
+        "What is Commercial Grain Farming?",
+        "what is Arable Farming?",
+        "What is Kharif Crops?",
+        "What is Rabi Crops?",
+        "What is Zaid Crops?",
+        "What is organic agriculture",
+        "How are insect pests managed on organic farms?",
+        "How are weeds managed on organic farms?",
+        "How do organic animals meet their nutritional requirements?",
+        "What are the living conditions for organic livestock?",
+        "What is an Organic Systems Management Plan?",
+        "Why is organic farming important?",
+        "Are there health benefits associated with eating organic food?",
+        "What is irrigation in agriculture?",
+        "What are the advantages of modern farming methods?",
+        "Which soil is most suitable for agriculture?",
+        "What is kharif crop?",
+        "What is rabi crop?",
+        "What is subsistence farming?",
+        "What is tenant farming?",
+        "What is sharecropping?",
+        "What are some of the benefits of vertical farming?",
+        "What are the branches of agriculture?"
+      ],
+      "responses": [
+        "Cultivation is the act of caring for or raising plants. Your desire to grow your own fruits and vegetables in the backyard means you'll be engaged in some heavy cultivation. The word cultivation is most often used to talk about the ways that farmers take care of crops",
+        "Cultivation, also known as tilling or soil refinement, is the act of digging into or cutting up an existing soil bed to better prepare it for planting. You might use a tractor, a rototiller, or hand tools such as a shovel or soil fork",
+        "Cultivation, Loosening and breaking up (tilling) of the soil , The soil around existing plants is cultivated (by hand using a hoe, or by machine using a cultivator) to destroy weeds and promote growth by increasing soil aeration and water infiltration",
+        "Shifting cultivation is commonly practiced in the tropics. It involves forest clearance through burning and slashing. The cleared land is cultivated until its fertility declines, or for three to five years or until native flora and weeds overtake it. When that happens, farmers abandon the land for a fallow period and clear another forest area for cultivation",
+        "Nomadic herding is the practice of keeping and grazing animals on natural pastures. It is common in the arid and semi-arid regions such as certain parts of Saudi Arabia, northern Africa and northern parts of Eurasia. The practice resembles pastoral farming",
+        "Unlike other types of agricultural activities, rudimentary sedentary cultivation is a type of subsistence farming practiced on the same piece of land year-in, year-out. Land is then left fallow after some years to regain its soil fertility. It is commonly practiced in the tropics and involves the growth of tree crops such as the Para rubber tree and grains",
+        "Livestock ranching focuses on rearing animals. Unlike nomadic herding, farmers do not move from one place to another in search of pasture and water, but live in settlements. Pasture lands are developed for grazing the animals. Many areas across the globe with large pieces of land with enough grazing areas for animals ",
+        "Also known as tree crop farming, industrialized agriculture or plantation farming, commercial plantations cover large land areas. Even if practiced on a smaller piece of land, the activity has a high commercial value. It involves the cultivation of tropical crops such as tea, rubber, coffee, coconut, cocoa, grapes, apples, spices, oranges, avocado, mangoes and palm oil",
+        "Also known as grain and livestock farming, mixed farming involves the growing of crops and rearing of animals. It has its origins in the humid, mid-latitudes, excluding Asia. It is an agricultural activity with its roots mainly in Europe. Mixed farming develops in close relation to market infrastructure. ",
+        "Increased demand for horticultural products in highly urbanized areas with dense populations led to the development of specialized horticulture. It has been successfully adopted in northern Hungary, France and the Swiss Lake regions for vineyard cultivation",
+        "Subsistence farming involves growing crops and keeping animals for the sole purpose of feeding the farmer and his family. It involves the use of simple farm tools on small pieces of land. Most subsistence farmers are believed to be poor and thus cannot afford to buy improved seeds and fertilizers. Therefore, they farm on land with low soil fertility or rough terrains.",
+        "Mediterranean agriculture involves the rearing of animals and growing of crops in the rugged, Mediterranean terrain. Small animals and crops such as citrus fruits, vineyards and wheat are the crops mainly grown in the region. Horticulture is also practiced with the majority of crops sown in winter due to winter rains",
+        "Dairy farming involves the rearing of cattle for milk. With its origins in Europe, the activity is highly developed in Sweden and Denmark. However, it has spread to other parts of the world and is practiced in areas near markets. It thrives in regions that enjoy temperate climate",
+        "Commercial grain farming resulted from mechanization of farms. It is mainly practiced in areas with less-dense population and low rainfall. The grains grown in these areas are drought and weather hardy and thus can survive in dry conditions. Mainly adopted in steppes, prairies and the temperate grasslands of Australia and South America, the activity mainly involves wheat monoculture",
+        "Arable farming, unlike pastoral or mixed farming, involves the growing of crops without keeping animals. It can be practiced on a large, commercial or small scale. Annual crops such as plantains, vegetables, grains, cassava, potatoes and legumes are often grown in arable farms"
+
+
+      ],
+      "context": [ "" ]
+    },
+    {
+      "tag": "ukulima",
+      "patterns": [
+        "Kuyini ukulima?",
+        "Ziyini izinzuzo zokulima",
+        "Uqonde ukuthini ngokulima",
+        "Kuyini ukutshala inhlabathi",
+        "Kuyini ukusetshenziswa kokulima",
+        "Kuyini Ukulima Ukushintsha",
+        "Kuyini Ukwelusa KwaNomadic",
+        "yini i-Rudimentary Sedentary Tillage",
+        "Kuyini Ukufuya Imfuyo/Ukulima Kwabelusi",
+        "Kuyini Ukufuya Imfuyo/Ukulima Kwabelusi",
+        "Kuyini Ukutshala Kwezohwebo",
+        "Kuyini Ukulima Okuxubile",
+        "yini i-Specialized Horticulture",
+        "Kuyini Ukuziphilisa",
+        "Iyini iMedithera Agriculture?",
+        "Kuyini Ukulima Ngobisi?",
+        "Kuyini I-Commerce Grain Farming?",
+        "yini i-Arable Farming?",
+        "Iyini iKharif Crops?",
+        "Ziyini izitshalo zeRabi?",
+        "Yini iZaid Crops?",
+        "Yini i-organic Agriculture",
+        "Ziphathwa kanjani izinambuzane emapulazini aphilayo?",
+        "Luphathwa kanjani ukhula emapulazini aphilayo?",
+        "Izilwane eziphilayo zihlangabezana kanjani nezidingo zazo zokudla okunomsoco?",
+        "Ziyini izimo zokuphila zemfuyo ephilayo?",
+        "Iyini i-Organic Systems Management Plan?",
+        "Kungani ukulima okuphilayo kubalulekile?",
+        "Ingabe zikhona izinzuzo zezempilo ezihlobene nokudla ukudla okuphilayo?",
+        "Kuyini ukuchelela kwezolimo?",
+        "Ziyini izinzuzo zezindlela zokulima zesimanje?",
+        "Imuphi umhlabathi ofaneleka kakhulu kwezolimo?",
+        "Yini isitshalo se-kharif?",
+        "Yini isitshalo se-rabi?",
+        "Kuyini subsistence farming?",
+        "Kuyini ukulima okuqashile?",
+        "Kuyini ukwabelana ngezitshalo?",
+        "Iziphi ezinye zezinzuzo zokulima zibheke phezulu?",
+        "Ayini amagatsha ezolimo?",
+        "Abalimi bazitshala kanjani izitshalo zabo?",
+        "Iziphi izindlela zokulima?",
+        "Kuyini ukulima ngamakhonto?",
+        "Kuyini ukulima?",
+        "Ibaluleke kangakanani ezolimo emnothweni wonkana?",
+        "Kungani ezolimo zibalulekile?"
+      ],
+      "responses": [
+        "Ukulima kuyisenzo sokunakekela noma ukukhulisa izitshalo. Isifiso sakho sokutshala izithelo nemifino yakho ngemuva kwegceke kusho ukuthi uzobe ulima kanzima. Igama elithi ukulima lisetshenziswa kakhulu uma kukhulunywa ngezindlela abalimi abazisebenzisayo. ukunakekela izitshalo",
+        "Ukulima, okubuye kwaziwe ngokuthi ukutshala noma ukucolisiswa kwenhlabathi, kuyisenzo sokumba noma sokusika umbhede okhona ukuze ulungele ukutshala. Ungasebenzisa ugandaganda, i-rototiller, noma amathuluzi esandla njengefosholo noma imfoloko yomhlabathi. ",
+        "Ukutshala, ukuxegisa nokuhlephula (ukulinywa) komhlabathi ,Inhlabathi ezungeze izitshalo ezikhona iyalinywa (ngesandla kusetshenziswa igeja, noma ngomshini kusetshenziswa umlimi) ukuze kucekelwe phansi ukhula futhi kukhuthaze ukukhula ngokukhulisa ukungena komoya emhlabathini namanzi. ukungena",
+        "Ukulima ngokushintshashintsha kuvame ukwenziwa ezindaweni ezishisayo. Kuhilela ukususa amahlathi ngokushiswa nokusikwa. Izwe eligawuliwe liyalinywa kuze kube kuncipha ukuvunda kwalo, noma iminyaka emithathu kuya kwemihlanu noma kuze kudliwe izitshalo nokhula. Uma lokho kwenzeka, abalimi bayayishiya. umhlabathi isikhathi sokulinywa bese ususa enye indawo yehlathi ukuze ulinywe",
+        "Ukwelusa ama-Nomadic kuwumkhuba wokugcina kanye nokuklaba izilwane emadlelweni emvelo. Kuvamile ezindaweni ezomile nezincane njengezingxenye ezithile zeSaudi Arabia, enyakatho ye-Afrika kanye nezingxenye ezisenyakatho ye-Eurasia. Lo mkhuba ufana nokulima ",
+        "Ngokungafani nezinye izinhlobo zemisebenzi yezolimo, ukulima okungajwayelekile kuwuhlobo lokuziphilisa olwenziwa endaweni efanayo unyaka nonyaka, unyaka nonyaka. Umhlaba ube usushiywa ungafumile ngemva kweminyaka ethile ukuze umhlabathi uvunde. Kujwayele ukwenziwa njalo. ezindaweni ezishisayo futhi kuhilela ukukhula kwezitshalo zezihlahla njengesihlahla senjoloba iPara kanye nezinhlamvu",
+        "Ukufuya kugxile ekukhuliseni izilwane. Ngokungafani nokwelusa imfuyo, abalimi abasuki kwenye indawo beyofuna amadlelo namanzi kodwa bahlala ezindaweni zokuhlala. Amadlelo athuthukiswa ukuze kudliwe imfuyo. Izindawo eziningi emhlabeni wonke zinezicucu ezinkulu. umhlaba onamadlelo anele ezilwane",
+        "Okwaziwa nangokuthi ukulima kwezitshalo zezihlahla, ukulima okuthuthukisiwe noma ukulima kwezitshalo, amasimu okuhweba ahlanganisa izindawo ezinkulu zomhlaba. Ngisho noma senziwa endaweni encane, umsebenzi unenani eliphakeme lokuhweba. Uhilela ukutshalwa kwezitshalo ezishisayo njengetiye, noma ukulima kwezitshalo zezihlahla, ukulima okuthuthukisiwe noma ukulima kwezitshalo, amasimu okuhweba ahlanganisa izindawo ezinkulu zomhlaba. irabha, ikhofi, ukhukhunathi, ukhokho, amagilebhisi, ama-apula, izinongo, amawolintshi, ukwatapheya, umango namafutha esundu",
+        "Okwaziwa nangokuthi ukulima okusanhlamvu nemfuyo, ukulima okuxubile kuhilela ukutshalwa kwezitshalo kanye nokukhulisa izilwane. Umsuka wako endaweni enomswakama, phakathi nendawo, ngaphandle kwe-Asia. Kungumsebenzi wezolimo onezimpande zawo ikakhulukazi eYurophu. Ukulima okuxubile ithuthuka ngokusondelana nengqalasizinda yemakethe. ",
+        "Ukwanda kwesidingo semikhiqizo ye-horticultural ezindaweni ezihlala emadolobheni anabantu abaningi kwaholela ekuthuthukisweni kwe-horticulture ekhethekile. Semukelwe ngempumelelo ezindaweni ezisenyakatho yeHungary, eFrance naseSwiss Lake ukuze kulinywe isivini",
+        "Ukuziphilisa ngokulima kuhlanganisa ukutshala izitshalo kanye nokugcina izilwane ngenjongo yokondla umlimi nomndeni wakhe kuphela. Kuhilela ukusetshenziswa kwamathuluzi alula okulima ezindaweni ezincane zomhlaba. Abalimi abaningi abaziphilisa ngokuziphilisa bakholelwa ukuthi bampofu ngakho abakwazi ukuthenga izinto ezithuthukisiwe. imbewu kanye nomanyolo. Ngakho-ke, balima emhlabathini ovundile ophansi noma ezindaweni ezimbi.",
+        "Ukulima kweMedithera kuhilela ukukhuliswa kwezilwane kanye nokukhula kwezitshalo ezindaweni ezimangelengele, zaseMedithera. Izilwane ezincane nezitshalo ezifana nezithelo ezisawolintshi, izivini nokolweni yizitshalo ezitshalwa kakhulu esifundeni. Ukulima kwezitshalo nakho kwenziwa ngezitshalo eziningi ezitshaliwe. ebusika ngenxa yezimvula zasebusika",
+        "Ukufuywa kobisi kuhilela ukufuywa kwezinkomo zobisi. Njengoba umsuka walo e-Europe, lo msebenzi uthuthuke kakhulu eSweden naseDenmark. Nokho, ususabalele nakwezinye izingxenye zomhlaba futhi uqhutshwa ezindaweni eziseduze nezimakethe. Uyachuma ezindaweni ezijabulela isimo sezulu esipholile",
+        "Ukulinywa okusanhlamvu okudalwe ngenjongo yokusetshenziswa kwemishini emapulazini. Kusetshenziswa kakhulu ezindaweni ezinabantu abangaminyene kakhulu nemvula encane. Izinhlamvu ezitshalwa kulezi zindawo zinesomiso kanye nesimo sezulu esiqinile futhi ngenxa yalokho ziyakwazi ukuphila endaweni eyomile. Ikakhulukazi etholwa ezindaweni ezihlala amathafa, amathafa kanye nezizinda ezinotshani ezipholile zase-Australia naseNingizimu Melika, umsebenzi ikakhulukazi uhilela ukolweni oyedwa ",
+        "Ukulima okulinywayo, akufani nokulima okuxubile noma okuxubile, kubandakanya ukutshala izilimo ngaphandle kokufuya imfuyo. Kungaqhutshwa ngezinga elikhulu, ezentengiselwano noma ezincane. Izitshalo zonyaka ezifana nama-plantain, imifino, okusanhlamvu, umdumbula, amazambane kanye nemidumba kuvame ukulinywa. emapulazini alinywayo",
+        "Izilimo ezitshalwa ngenkathi yeziphepho zaziwa ngokuthi izitshalo zeKharif. Isib., ummbila, unyaluthi, ukotini. Imbewu ihlwanyelwa ekuqaleni kwenkathi yezimvula futhi ivunwa ekupheleni kwenkathi yemvula. Izitshalo ezinjalo zidinga amanzi amaningi kanye nesimo sezulu esishisayo ukuze sikhule kahle",
+        "Igama elithi Rabi lisho intwasahlobo - igama elisuselwa olimini lwesi-Arabhu. Izitshalo ezitshalwa ngenkathi yasebusika futhi zivunwa entwasahlobo zibizwa ngokuthi izitshalo zamaRabi. Ukolweni, igram, kanye nesinaphi ngezinye zezitshalo zamaRabi. Izindlela zokulima zenziwa ukuze kukhiqizwe izinhlobo ezintsha zezitshalo. Izitshalo ezinjalo zidinga isimo sezulu esifudumele ukuze zihlume futhi zivuthwe. Kodwa-ke, zidinga isimo sezulu esibandayo ukuze zikhule ",
+        "Izilimo ezinjalo zitshalwa phakathi kwezinkathi zeKharif neRabi, okungukuthi, phakathi kukaMashi noJuni .Lezi zitshalo zivuthwa ngaphambi kwesikhathi. Ikhukhamba, ithanga, ukhamba olubabayo, kanye nekhabe izitshalo zeZaid",
+        "Ukukhiqizwa kokudla okuphilayo kusekelwe ohlelweni lokulima olulingisa imvelo yemvelo elinganisa inani lezinambuzane nenzuzo ephilayo futhi igcine futhi igcwalise umhlabathi ovundile. Igama elithi 'organic' e-United States lisetshenziswa emikhiqizweni yezolimo ekhiqizwa emapulazini banamathele kumthetho we-USDA's National Organic Programme (NOP)",
+        "Izinhlelo ze-Organic farm zivikela ukulinyazwa kwezitshalo yizinambuzane eziwuhlupho ngokuyinhloko ngokusebenzisa izinqubo zebhayoloji nezamasiko ezifana nokushintshanisa izitshalo; ukuhlukahluka; ukuphathwa kwezindawo zokuhlala; ukukhishwa kwezinto eziphilayo ezizuzisayo; ukukhucululwa kwendle; kanye nesikhathi. Ezinye izinto zemvelo, njenge-botanicals, kanye nezimbalwa ngokuqhathaniswa izibulala-zinambuzane ezingezona ezinobuthi ezifana nensipho zivunyelwe yi-USDA National Organic Program Standards uma zisetshenziswa ngokuhambisana nohlelo lwepulazi futhi zisetshenziswa ngokuhambisana nemikhawulo etholakala ku-National List ",
+        "Ukulawulwa kokhula emapulazini aphilayo kuhlanganisa amasu amasiko kanye nemishini efana nokushintshaniswa kwezitshalo ezicindezela ukhula, ukumboza, ukulinywa, ukulinywa, ukulawulwa kwamanzi, nokukhipha ukhula ngezandla. Ukhula ngokuvamile lusiza ukulondoloza umhlabathi, ukuthuthukisa izinto eziphilayo, kanye nokunikeza indawo yokuhlala enenzuzo. ezitheni zemvelo emapulazini ezinto eziphilayo. Izimbobo zepulasitiki zivunyelwe uma nje zisuswa ekupheleni kwesizini",
+        "Yonke imikhiqizo yezolimo ehlinzekwe kwi-feed ration kumele ibe yi-organic, ibe nenani elilinganiselwe le-supplementation kanye nezithasiselo. Imfuyo edlayo kufanele ibe nengxenye enkulu yezidingo zayo zokudla ezihlangatshezwa amadlelo",
+        "Zonke izilwane eziphilayo zidingeka ukuthi zikwazi ukufinyelela ngaphandle nasezindaweni zokuzivocavoca, futhi kufanele zihlinzekwe ngezimo zokuphila ezinempilo. Izilwane ezilusayo nazo kudingeka zithole ukufinyelela emadlelweni",
+        "Isitifiketi se-Organic sidinga i-Organic Systems Management Plan, eyaziwa nangokuthi i-Organic Farm Plan noma i-Organic Handling Plan. Le mibhalo ikhomba ukuthi ubani onesibopho sokusebenza kwe-organic futhi ichaza izinqubo zokuphatha kanye nokugcinwa kwamarekhodi ukuze kuqashwe ukusetshenziswa kwalolo hlelo. Uhlelo lusebenza njenge Inkontileka phakathi komqhubi kanye nesitifiketi. Iningi labanikezeli bezitifiketi lisiza abaqhubi ekuthuthukiseni uhlelo lwabo ngokunikeza amafomu nemibhalo yokuqondisa. Izinhlelo Zokulawulwa Kwezinhlelo Zemvelo kufanele zibuyekezwe okungenani minyaka yonke ukuze kugcinwe isimo sezinto eziphilayo eziqinisekisiwe",
+        "Isidingo sabathengi semikhiqizo ye-organic e-EU sesilokhu sikhula kancane isikhathi esingaphezu kweminyaka eyishumi, futhi isabelo somkhakha wokulima ngokwemvelo siyanda emazweni amaningi angamaLungu. Ngakho-ke, kuyingxenye ebalulekile ye-bioeconomy yaseYurophu. Lona umnotho. yakhelwe phezu kwemithombo yebhayoloji ngokugcizelela okuhlukahlukene emahlathini, ezolimo, olwandle, noma imfucuza, kuye ngezinqubo ezikhona kanye nezinsiza ezitholakalayo emazweni angamalungu ahlukene",
+        "Abukho ubufakazi obuqinile bokusekela inkolelo yokuthi ukudla okuphilayo kunempilo kunokudla okungezona izinto eziphilayo. Ucwaningo olukhulu olwenziwa yi-UK's Food Safety Authority ngo-2009, kanye ne-Stanford University ngo-2012, aluzange lwembule umehluko obalulekile mayelana nokuphepha noma ukudla okunomsoco. nakuba laba baphetha ngokuthi ukudla ukudla okuphilayo kunganciphisa ukuchayeka ezibulala-zinambuzane kanye namagciwane amelana nama-antibiotics",
+        "Ukuchelela kwezolimo kubhekisela ekusetshenzisweni kwamanzi okulawulwayo ngokusebenzisa izinhlelo ezenziwe ngabantu. Lezi zinhlelo zenzelwe ukuxazulula inkinga yokunisela izitshalo ezindaweni ezingenazo imvula noma imvula encane. Amanzi adingwa yizitshalo ukuze kube lula ukuhamba phezulu Amanzi azungeze izitshalo ehlisa izinga lokushisa endaweni. Ezinye izinhlelo zokunisela zezolimo i-drip, imisele, izikhukhula, amandla adonsela phansi, i-sprinkler, i-sub-irrigation kanye ne-centre-pivot irrigation.",
+        " Ezinye izinzuzo zezindlela zokulima zesimanje yilezi: Ukwenyuka komkhiqizo, Ukukhiqiza okuthuthukisiwe, Ukuthuthukisa isimo senhlalo nomnotho sabalimi, Kunikela emnothweni wezwe, Ikhwalithi ephezulu yomkhiqizo, Ukugcinwa okuthuthukisiwe kokugcinwa nokuncishiswa kokusanhlamvu okusanhlamvu, Ukuvikela izitshalo ekulimaleni kwazo zonke izinhlobo. izinhlobo",
+        "Ezweni lonke, kungatholakala izinhlobo ezahlukene zenhlabathi futhi uhlobo ngalunye lunezici ezihlukile zomzimba, amakhemikhali kanye ne-biological. Inhlabathi ye-alluvial ithathwa njengenhlabathi evunde kakhulu equkethe i-potassium kuyo futhi ilungele izitshalo zokulima ezifana komoba, i-paddy kanye ne-plantain. Inhlabathi ebomvu ine-iron eningi futhi isetshenziselwa ukutshala imbewu yegremu, amantongomane kanye nembewu ye-castor.Inhlabathi emnyama ine-calcium eningi, i-magnesium ne-potassium esetshenziselwa ukutshalwa kwe-chilly, i-jowar, ukotini, imbewu kawoyela kanye nommbila. Okokugcina, inhlabathi enesihlabathi inomsoco omncane, kodwa iwusizo ekutshaleni izitshalo ezifana nekakhukhunathi",
+        "Imikhuba yezolimo e-India ihlukaniswa ngesisekelo sesizini njengesitshalo se-kharif kanye nesitshalo se-rabi. Isilimo se-Kharif sibhekisela kuleso sitshalo esivunwa ngenkathi yemvula",
+        "Izitshalo ze-rabi zibhekisela kuleso sitshalo esivunwa ngesikhathi sasebusika. Izibonelo zezitshalo zamarabi ukolweni, amazambane, njll",
+        "Ngokujwayelekile, ukulima kwamaNdiya kusekelwe ezingeni lokuziphilisa. Lokhu kusho ukuthi ukulima kwenziwa ukuze kuhlangatshezwane nezidingo zabalimi. Ngamanye amazwi, ukulima ngokuziphilisa kubhekisela kulokho kulima lapho umkhiqizo ulingana nokusetshenziswa. Akukho okusanhlamvu kokudla okusalayo okuvelayo",
+        "Ngaphansi kokulima okuqashile; umphakathi wabalimi umi njengabanikazi bomhlaba omkhulu ohlukaniswe waba yizindawo ezincane futhi uzinze phakathi kwamapulazi angamalungu ngokumelene nokukhokhwa kwerenti engaguquki. Umlimi ngamunye angakwazi ukulahla umkhiqizo ngendlela athanda ngayo.",
+        "Ngaphansi kwalokhu, izitshalo ezikhiqizwayo zinqunywa ngokuhambisana nenkambiso ebekiwe phakathi kwabanikazi bomhlaba kanye ne-baradaris. Umgomo wokutshala ngokuhlanganyela uzohluka uma izindleko zokulima ziphelele futhi/noma ingxenye zithwelwe umnikazi wendawo",
+        "Ezinye zezinzuzo zokuqala ipulazi lakho elimile zihlanganisa: Ukukhulisa izitshalo nemikhiqizo ehlukahlukene, Ukuhlinzeka umndeni wakho, abangani, nomphakathi ngokudla okunempilo nokunomsoco, Ukuhlinzeka ngemisebenzi yomphakathi wakini, Ukugwema izingozi ezivamile zokulima, njengokuchayeka kumakhemikhali, izingozi zesimo sezulu, nokunye",
+        "Imikhakha ehlukene yezolimo i-horticulture, aquaculture, ukulima ubisi, ukulima kwemvelo, izinkukhu, i-sericulture, i-vermiculture kanye ne-marketing gardening. Uma incazelo ebanzi yezolimo icatshangwa ngakho-ke ingabandakanya amagatsha, njengobuchwepheshe bembewu, i-Nematology, isitshalo. ukuzalanisa kanye nezakhi zofuzo, isayensi yomhlabathi, i-agronomy njll",
+        "Abalimi kumele baqonde izimo zokutshala endaweni, izidingo zomhlabathi, ukuhambisana kwezitshalo, njll. ukuze babe nebhizinisi eliphumelelayo lokulima. Ulwazi oluyisisekelo lokulima kanye nezinsiza ezidingekayo kusiza abalimi ukukhulisa izitshalo zabo",
+        "Ezinye izindlela zokulima okusimeme yilezi: Ukujikeleziswa kwezitshalo nokuhlukahluka, Ukukhulisa izitshalo ezisivalile, Ukunciphisa ukulima, Ukucabangela ukulawulwa kwezinambuzane okudidiyelwe, Ukwamukela ukulima okudidiyelwe (imfuyo nezitshalo), Ukulandela izinqubo ze-agroforestry, Ukuphatha indawo kanye nezinhlelo zokulima",
+        "Inqubo yokutshala endaweni eyehlelayo ilandela imigqa yayo yokuphakama. Kulo mkhuba ama-ruts enziwa igeja ancike emthambekeni kunokuba ahambisane. Izitshalo ziphula ukugeleza kwamanzi futhi zivimbela ukuguguleka komhlabathi, ngaleyo ndlela kwenze ukulima ngamakhonto kube okusimeme. indlela yokulima",
+        "Ngokwencazelo yesichazamazwi, Ukulima kuyisenzo noma inqubo yokusebenza emhlabathini, ukutshala imbewu, nokutshala izitshalo ezidliwayo. Ungachaza futhi ukufuya izilwane ukuze uthole ubisi noma inyama njengokulima . Ukulima kuyindlela enhle yokuchaza indlela yokuphila kanye ne umsebenzi wabantu abamisebenzi yabo isembonini yezolimo.  Ibizo elithi  ipulazi, elisuselwe eNkathini Ephakathi yesiLatini, ekuqaleni lalisho ukuthi, Ukuqashiswa kwepulazi. ",
+        "Ezolimo zenza cishe u-4.5% weGross Domestic Product yase-United States. Nakuba, kwamanye amazwe amaningi, ezolimo zifaka isandla ngokuphindwe ka-5-10 ku-GDP",
+        "Ezolimo zidlala indima ebalulekile emnothweni wamazwe asathuthuka, futhi zihlinzeka ngomthombo wokudla, imali engenayo kanye nemisebenzi kubantu basemakhaya. Emazweni amaningi ezolimo ziwumthombo ohamba phambili kwezomnotho, lawo mazwe asiza ekuhlinzekeni ezinye ze-US nokudla"
+      ],
+      "context": [ "" ]
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ]
+}
